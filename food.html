@@ -1,0 +1,157 @@
+<head>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+  background-color: #f1f1f1;
+  
+  font-family: Arial ,sans-serif;
+}
+h1{
+  text-align:center;
+  font-size:50px;
+
+}
+        .container {
+            display: flex; /* Use flexbox to align items in a row */
+            justify-content: center; /* Center items horizontally */
+            width: 100%; /* Full width of the parent */
+        }
+
+        .image-container {
+            position: relative;
+            width: 30%; /* Adjust the width of each image container */
+            margin: 10px; /* Add some margin between images */
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 140, 186, 0.7); /* Semi-transparent overlay */
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .navbar {
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+.nav-list a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+.nav-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+     </style>
+</head>
+<body>
+<header>
+	     <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Attraction.html">Attractions</a></li>
+                <li><a href="food.html">Food</a></li>
+            </ul>
+        </nav>
+</header>
+ <h1>Food in Italy</h1>
+	    <h3>Taste of Italy: A Culinary Journey</h3>
+
+<p>Italy is a gastronomic paradise, renowned for its rich flavors, fresh ingredients, and time-honored recipes that have been passed down through generations. Each region boasts its own unique culinary traditions, making Italian cuisine one of the most diverse and celebrated in the world. Join us as we explore the delectable dishes and local specialties that define Italy's vibrant food culture.</p>
+<ol>
+<h3><li>Pasta: The Heart of Italian Cuisine</li></h3>
+
+<p>No discussion of Italian food is complete without pasta. From the silky strands of tagliatelle to the hearty rigatoni, pasta comes in countless shapes and sizes. Each region has its signature pasta dishes:</p>
+
+<div class="container">
+    <div class="image-container">
+        <img src="Bolognese.jfif" alt="Bolognese" class="image">
+        <div class="overlay">
+            <div class="text">Originating from Bologna, this rich meat sauce is traditionally served with tagliatelle.</div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="Cacio e Pepe.jfif" alt="Cacio e Pepe" class="image">
+        <div class="overlay">
+            <div class="text">A Roman classic made with just three ingredients: pasta, Pecorino Romano cheese, and black pepper.</div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="pesto3.jfif" alt="Pesto alla Genovese" class="image" height="200px">
+        <div class="overlay">
+            <div class="text">Hailing from Genoa, this vibrant sauce combines fresh basil, garlic, pine nuts, Parmesan cheese, and olive oil.</div>
+        </div>
+    </div>
+</div>
+
+<h3><li>Pizza: A Slice of Heaven</li></h3>
+
+<p>Italy is the birthplace of pizza, and nowhere is it more celebrated than in Naples. Traditional Neapolitan pizza features a thin, soft crust topped with San Marzano tomatoes, fresh mozzarella, basil, and a drizzle of olive oil. Each bite is a harmonious blend of flavors that captures the essence of Italian cooking.</p>
+<div class="container">
+    <div class="image-container">
+        <img src="margherita-pizza.jpg" alt="margherita" class="image">
+        <div class="overlay">
+            <div class="text">: A classic Neapolitan pizza, the Margherita features a simple yet delicious combination of fresh tomatoes, mozzarella cheese, fresh basil, olive oil, and a sprinkle of salt. Its colors represent the Italian flag: red (tomatoes), white (mozzarella), and green (basil).</div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="Quattro Stagioni.jfif" alt="Quattro Stagioni" class="image">
+        <div class="overlay">
+            <div class="text">This pizza is divided into four sections, each representing a different season. It typically includes artichokes (spring), mushrooms (summer), ham (autumn), and olives (winter) on a base of tomato sauce and mozzarella. The variety of toppings offers a delightful mix of flavors.</div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src=" diavola.jfif" alt="diavola" class="image" height="200px">
+        <div class="overlay">
+            <div class="text">Known for its spicy kick, Diavola pizza is topped with tomato sauce, mozzarella cheese, and spicy salami or pepperoni. Some variations may also include chili peppers or hot oil for an extra layer of heat, making it a favorite among those who enjoy bold flavors.</div>
+        </div>
+    </div>
+</div>
+</ol>
+</body>
+</html>
+

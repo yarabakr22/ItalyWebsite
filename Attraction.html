@@ -1,0 +1,164 @@
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial ,sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.navbar {
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+.nav-list a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+.nav-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+}
+</style>
+</head>
+<body>
+  <header>
+	    <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Attraction.html">Attractions</a></li>
+                <li><a href="food.html">Food</a></li>
+            </ul>
+        
+</nav>
+	  </header>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>PARADICE IN ITALY</h1>
+<hr>
+
+<h2>My favourite places to see in Italy</h2>
+<p>Italy, a land steeped in history, art, and culture, offers an array of attractions that captivate the hearts of travelers. From the breathtaking landscapes of the countryside to the bustling streets of its vibrant cities, Italy is a treasure trove of experiences waiting to be explored. Here are some of the favorite places to see when visiting this enchanting country:</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="Rome.jfif" alt="Rome" style="width:100%">
+      <h3>Rome</h3>
+      <p>As the capital city, Rome is an open-air museum brimming with ancient history. Marvel at the grandeur of the Colosseum, wander through the Roman Forum, and toss a coin into the Trevi Fountain for good luck. Don’t miss the Vatican City, home to St. Peter's Basilica .</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Florence.jfif" alt="Lights" style="width:100%">
+      <h3>Florence</h3>
+      <p>The cradle of the Renaissance, Florence is a must-visit for art lovers. Visit the Uffizi Gallery to see masterpieces by Botticelli and Michelangelo, and climb to the top of the Duomo for panoramic views of the city. The Ponte Vecchio bridge is a perfect spot for a picturesque stroll.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Cinque_Terre.jfif" alt="Nature" style="width:100% " >
+      <h3>Cinque_Terre</h3>
+      <p>This stunning coastal region is made up of five colorful villages perched on cliffs overlooking the Ligurian Sea. Hike along scenic trails that connect each village, savor fresh seafood, and relax on beautiful beaches while soaking in breathtaking views.
+
+</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Tuscany.jfif" alt="Mountains" style="width:100%">
+      <h3>Tuscany</h3>
+      <p>Famous for its rolling hills, vineyards, and charming medieval towns, Tuscany is a paradise for those seeking tranquility and natural beauty. Visit towns like Siena, San Gimignano, and Montepulciano, and indulge in wine tasting at local wineries.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="Venice.jfif" alt="Bear" style="width:100%">
+  <h3>Venice</h3>
+  <p>Known as the "City of Canals," Venice is a unique blend of romance and mystique. Glide through its winding waterways on a gondola, explore the stunning architecture of St. Mark's Basilica, and lose yourself in the labyrinthine streets filled with charming shops and cafes.</p>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
